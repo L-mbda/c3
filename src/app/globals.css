@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "KumbhSans";
+    src: url("/fonts/KumbhSans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "STIX";
+    src: url("/fonts/STIX.ttf") format("truetype");
+}
+
+:root {
+    --background: #ffffff;
+    --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+    }
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: "KumbhSans";
+}
+
+.dots_bg {
+    background-size: 40px 40px;
+    background-image: radial-gradient(
+        circle,
+        #404040 1px,
+        rgba(0, 0, 0, 0) 1px
+    );
+}
