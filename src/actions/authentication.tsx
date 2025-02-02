@@ -68,6 +68,8 @@ export class Authentication {
 
             // Validation and login
             if (password == credentials[0].password) {
+                // Create ID
+                
                 // TODO: SET ID TO WORK WITH A DATABASE TABLE
                 const token = await new jwt.SignJWT({'id': credentials[0].id}).setAudience('hyperion-c3')
                 // @ts-expect-error will always raise about JWT
